@@ -25,6 +25,10 @@ double get_optimal_value(int capacity, vector<int> weights, vector<int> values) 
     triplets.push_back(k);
   }
 
+  // unable to understant this part
+   std::sort(triplets.begin(), triplets.end(), [](const weightValuePair &a, const weightValuePair &b) -> bool {
+    return a.vw > b.vw;
+  });
   
   
   
